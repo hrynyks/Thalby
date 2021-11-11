@@ -1,0 +1,68 @@
+.hero {
+
+    background-color: #F0EFEB;
+
+    @include a (tablet-xl) {
+        padding: 90px 0;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet-xl) {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        font-size: toRem(60);
+        font-weight: 700;
+        line-height: 70px;
+        max-width: 534px;
+        width: 100%;
+        margin-bottom: 42px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+
+        &-span {
+            display: block;
+        }
+    }
+
+    &__descr {
+        font-size: toRem(24);
+        line-height: 28px;
+        max-width: 481px;
+        width: 100%;
+        margin-bottom: 26px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        font-size: toRem(17);
+        width: 129px;
+        line-height: 36px;
+        background-color: $dark-color;
+        color: $light-color;
+        border-radius: 100px;
+        text-align: center;
+
+        @include a (tablet-xl) {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__image {
+        @include a (tablet-xl) {
+            display: none;
+        }
+    }
+}

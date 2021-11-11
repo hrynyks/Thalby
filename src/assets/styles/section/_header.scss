@@ -1,0 +1,42 @@
+.header {
+    padding: 15px 0;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 28px;
+    }
+
+    &__item {
+        &-link {
+            font-weight: 700;
+            color: $dark-color;
+
+            &:hover {
+                color: fuchsia;
+            }
+        }
+    }
+
+    &__logo {
+        @include a (tablet) {
+            order: -1;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

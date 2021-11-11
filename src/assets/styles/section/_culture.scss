@@ -1,0 +1,48 @@
+.culture {
+    padding: 76px 0 51px;
+    background-color: rgba(204, 204, 204, 0.6);
+
+    &-wrap {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 50px;
+
+        @include a (laptop) {
+            justify-content: center;
+        }
+
+        @include a (tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 31px;
+
+        @include a (tablet) {
+            align-items: center;
+        }
+    }
+
+    &__descr {
+        font-size: toRem(36);
+        line-height: 42px;
+        text-align: right;
+
+        @include a (tablet) {
+            text-align: center;
+        }
+    }
+
+    &__link {
+        font-size: toRem(17);
+        text-decoration: underline;
+        color: $dark-color;
+    }
+}

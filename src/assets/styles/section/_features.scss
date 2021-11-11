@@ -1,0 +1,50 @@
+.features {
+    padding: 233px 0 163px;
+
+    @include a (tablet) {
+        padding: 100px 0;
+    }
+
+    &__title {
+        font-weight: 400;
+        max-width: 430px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 69px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 190px);
+        justify-content: space-between;
+        row-gap: 111px;
+
+        @include a (laptop) {
+            justify-content: center;
+            gap: 100px;
+        }
+
+        @include a (tablet) {
+            grid-template-columns: repeat(2, 190px);
+            gap: 70px;
+        }
+
+        @include a (mobile) {
+            grid-template-columns: 190px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+
+        &-descr {
+            font-size: toRem(30);
+            line-height: 35px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+}

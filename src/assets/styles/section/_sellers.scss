@@ -1,0 +1,55 @@
+.sellers {
+    padding-bottom: 248px;
+
+    @include a (tablet) {
+        padding-bottom: 100px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 52px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        @include a (tablet) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-img {
+            margin-bottom: 25px;
+        }
+
+        &-descr {
+            font-size: toRem(17);
+            line-height: 20px;
+            font-weight: 700;
+            max-width: 150px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 17px;
+        }
+
+        &-price {
+            font-size: toRem(17);
+            margin-bottom: 10px;
+        }
+
+        &-link {
+            font-size: toRem(17);
+            font-weight: 700;
+            text-decoration: underline;
+            color: $dark-color;
+        }
+    }
+}

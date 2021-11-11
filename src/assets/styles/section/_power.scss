@@ -1,0 +1,44 @@
+.power {
+    padding: 76px 0 51px;
+    background-color: rgba(204, 204, 204, 0.3);
+
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        @include a (tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        max-width: 470px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+
+        @include a (tablet) {
+            order: -1;
+            align-items: center;
+        }
+    }
+
+    &__descr {
+        font-size: toRem(36);
+        line-height: 42px;
+
+        @include a (tablet) {
+            text-align: center;
+        }
+    }
+
+    &__link {
+        font-size: toRem(17);
+        font-weight: 700;
+        color: $dark-color;
+        text-decoration: underline;
+    }
+}
